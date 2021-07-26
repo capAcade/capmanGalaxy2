@@ -1,5 +1,5 @@
 {
-  "name": "@capacade/phaser3-game-template",
+  "name": "@capacade/capmangalaxy2",
   "version": "0.0.1",
   "description": "template for your first game",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capAcade/phaser3-game-template.git"
+    "url": "git+https://github.com/capAcade/capmanGalaxy2.git"
   },
   "keywords": [
     "phaser"
@@ -18,9 +18,9 @@
   "author": "Sven van Straalen",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/capAcade/phaser3-game-template/issues"
+    "url": "https://github.com/capAcade/capmanGalaxy2/issues"
   },
-  "homepage": "https://github.com/capAcade/phaser3-game-template#readme",
+  "homepage": "https://github.com/capAcade/capmanGalaxy2#readme",
   "dependencies": {
     "@capacade/arcadekeymap": "^1.0.0",
     "phaser": "^3.55.2"

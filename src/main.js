@@ -5,8 +5,8 @@ import playGame from './scenes/playTheGameScene';
 const config = {
   type: Phaser.AUTO,
   parent: 'phaser-example',
-  width: 1024,
-  height: 768,
+  width: window.outerWidth,
+  height: window.outerHeight,
   physics: {
     default: 'arcade',
     arcade: {

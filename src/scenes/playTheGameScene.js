@@ -19,7 +19,6 @@ export default class playTheGame extends Phaser.Scene {
   }
 
   preload() {
-   // this.load.image('bg', bg);
     this.load.image('heroImg', heroImg);
     this.load.image('bgOne', bgOne);
     this.load.image('bgTwo', bgTwo);
@@ -52,22 +51,22 @@ export default class playTheGame extends Phaser.Scene {
     });
     this.playerOne = new Hero({
       scene: this,
-      x: 400,
-      y: 550,
+      x: this.cameras.main.worldView.x + this.cameras.main.width / 2,
+      y: 950,
       sprite: 'heroImg',
       id: 'p1'
     });
 
-    this.heroGroup = new Phaser.Physics.Arcade.Group(
+    this.heroGroup = this.physics.add.group(
       this.physics.world,
       this,
       [this.playerOne]
     );
 
-    this.adds = new Phaser.Physics.Arcade.Group(
+    this.adds = this.physics.add.group(
       this.physics.world,
       this,
-      this.spawnNewEnemys(this.gameConfig.waves[0])
+      this.spawnNewEnemys(this.gameConfig.waves[0]),
     );
     
   }
